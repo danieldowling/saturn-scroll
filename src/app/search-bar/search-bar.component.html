@@ -1,1 +1,19 @@
-<p>search-bar works!</p>
+<div class="row">
+  <div class="col-sm-7 form-group">
+    <input
+      type="text"
+      id="name"
+      class="form-control"
+      placeholder="Search Planets"
+      #searchGalaxy
+    />
+  </div>
+  <div class="col-sm-3">
+    <button
+      class="btn btn-primary"
+      (click)="onExploreGalaxy(searchGalaxy.value)"
+    >
+      Explore
+    </button>
+  </div>
+</div>

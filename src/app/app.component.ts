@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'saturn-scroll';
+  searchTerm = '';
+
+  newSearchTerm(searchGalaxy: string) {
+    this.searchTerm = searchGalaxy;
+  }
 }
